@@ -1,3 +1,15 @@
-*{
-    background-color: grey;
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 30px;
+  background-color: white;
+  padding: 30px;
+}
+ul li a {
+  display: block;
 }
