@@ -1,15 +1,12 @@
-body {
-  background-color: rgb(241, 241, 241);
+/* CSS */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1; /* fix for Chrome */
 }
-
-header,
-nav,
-main,
-footer {
-  margin: 30px;
-  background-color: white;
-  padding: 30px;
-}
-ul li a {
-  display: block;
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
