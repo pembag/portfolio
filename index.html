@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Pemba Gurung | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://rsms.me/">
@@ -12,13 +12,13 @@
 
 <body>
     <nav>
-        <a href="#">Pemba</a>
+        <h1><a href="#hero">Pemba</a></h1>
         <ul>
             <li>
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#skills">Skill</a>
+                <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#experience">Experience</a>
@@ -27,7 +27,7 @@
                 <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href=".educations">Education</a>
+                <a href="#education">Education</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -36,98 +36,105 @@
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <h1>Hello, My name is Pemba Gurung!</h1>
-            <h3>
-                <strong><em>Full Stack Developer</em></strong>
-            </h3>
-            <p>
-                I build intuitive user interfaces and robust, scalable backend systems that power business
-                applications.
-            </p>
+        <section id="hero" class="hero">
+            <div class="intro">
+                <h1>Hello, Pemba here! 👋</h1>
+                <h3>
+                    <em>Full Stack Developer</em>
+                </h3>
+                <p>
+                    I build intuitive user interface and
+                    <br>robust backend systems <br>that power business
+                    applications.
+                </p>
+            </div>
+            <div class="profile">
+                <img src="./asset/webpage_profile.png" alt="profile">
+            </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <h2>About me</h2>
-            <p>I’m a Full Stack Developer with over 6 years of hands-on experience designing, developing, and
+            <span>I’m a Full Stack Developer with over 6 years of hands-on experience designing, developing, and
                 maintaining scalable, secure applications using
                 Java, Spring Boot, React, Node.js, and AWS. My experience spans fintech, healthcare,
                 energy, and
                 enterprise technology, with a strong focus on backend development, REST APIs, distributed systems, and
                 cloud solutions.
-                I'm passionate about solving complex problems, building reliable software, and continuously improving my
-                skills to
-                deliver impactful solutions.</p>
+                I'm passionate about understanding how frontend and backend components interact, solving the challenges
+                that connect
+                them, and building seamless, reliable applications from end to end. Currently, my focus is on building
+                reliable, scalable software while continuously sharpening my technical skills to
+                deliver meaningful, impactful solutions.
+
+                <br>
+                <br>
+                When I'm not coding, you'll probably find me exploring the zoo or wandering through a museum with my
+                son, getting
+                curious about everything and letting our imaginations run wild in the world of dinosaurs! I also love
+                trying my hand at
+                cooking dishes from different cultures. There's something exciting about learning a new recipe,
+                experimenting with
+                flavors, and occasionally surprising myself with how well it turns out!
+            </span>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Skills</h2>
             <hr>
-            <h4>Backend</h4>
-            <ul>
-                <li>Java</li>
-                <li>Spring</li>
-                <li>Spring Boot</li>
-                <li>Spring MVC</li>
-                <li>Spring Security</li>
-                <li>Spring Data JPA</li>
-                <li>Hibernate</li>
-                <li>Maven</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-            </ul>
-            <h4>Frontend</h4>
-            <ul>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>React.js</li>
-            </ul>
-            <h4>Architecture</h4>
-            <ul>
-                <li>Microservice</li>
-                <li>RESTful services</li>
-                <li>Event-driven architecture</li>
-                <li>Distributed Systems</li>
-                <li>MVC</li>
-                <li>API Intergration</li>
-                <li>AWS Cloud Computing</li>
-            </ul>
+            <div class="cards">
+                <div class="backend_card">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring</li>
+                        <li>Spring Boot</li>
+                        <li>Spring MVC</li>
+                        <li>Spring Security</li>
+                        <li>Spring Data JPA</li>
+                        <li>Hibernate</li>
+                        <li>Maven</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
 
-            <h4>Database</h4>
-            <ul>
-                <li>PostreSQL</li>
-                <li>Oracle</li>
-                <li>SQL Server</li>
-                <li>MongoDB</li>
-            </ul>
+                <div class="frontend_card">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
 
-            <h4>Architecture</h4>
-            <ul>
-                <li>Microservice</li>
-                <li>RESTful services</li>
-                <li>Event-driven architecture</li>
-                <li>Distributed Systems</li>
-                <li>MVC</li>
-                <li>API Intergration</li>
-            </ul>
+                <div class="database_card">
+                    <h4>Database</h4>
+                    <ul>
+                        <li>PostreSQL</li>
+                        <li>Oracle</li>
+                        <li>SQL Server</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
 
-            <h4>Messaging/Cache</h4>
-            <ul>
-                <li>Apache Kafka</li>
-                <li>Redis</li>
-            </ul>
+                <div class="tool_card">
+                    <h4>Architecture</h4>
+                    <ul>
+                        <li>Microservice</li>
+                        <li>RESTful services</li>
+                        <li>Event-driven architecture</li>
+                        <li>Distributed Systems</li>
+                        <li>MVC</li>
+                        <li>API Intergration</li>
+                        <li>Apache Kafka</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h4>Architecture</h4>
-            <ul>
-                <li>Microservice</li>
-                <li>RESTful services</li>
-                <li>Event-driven architecture</li>
-                <li>Distributed Systems</li>
-                <li>MVC</li>
-                <li>API Intergration</li>
-            </ul>
         </section>
-        <section class="experiences">
+        <section id="experience" class="experiences">
             <h2>Experience</h2>
             <article>
                 <table>
@@ -159,7 +166,7 @@
                             React.js, JavaScript, and TypeScript.</span>
                     </li>
                     <li>
-                        <span>• Integrated third-party and enterprise APIs using secure authentication and
+                        <span>Integrated third-party and enterprise APIs using secure authentication and
                             authorization mechanisms.</span>
                     </li>
                     <li><span>Performed API testing using Postman and participated in code reviews, Agile/Scrum
@@ -241,8 +248,7 @@
                     </li>
                     <li>
                         <span>Engineered a data aggregation pipeline using Spring Data MongoDB for on-peak/off-peak
-                            energy usage and cost
-                            analytics.
+                            energy usage and cost analytics.
                         </span>
                     </li>
                     <li><span>Integrated National Weather Service APIs using Java 8, implementing retry logic and
@@ -291,7 +297,7 @@
                 </ul>
             </article>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
             <article>
                 <h4><mark>Nestly</mark></h4>
@@ -354,7 +360,7 @@
                 </table>
             </article>
         </section>
-        <section class="education">
+        <section id="education" class="education">
             <h2>
                 Education
             </h2>
@@ -383,7 +389,7 @@
                 </tr>
             </table>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <article>
                 <h4>Find me elsewhere:</h4>
@@ -429,8 +435,11 @@
                 </form>
             </article>
         </section>
+        <aside class="sideMenu">
+
+        </aside>
     </main>
-    <footer>copyright</footer>
+    <!-- <footer>copyright</footer>
 </body>
 
 </html>
