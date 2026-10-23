@@ -33,23 +33,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
-
-  /* width: 100%;
-  height: 100vh; */
-  /* background-color: rgb(225, 225, 225); */
 }
 
 /* nav bar */
-ul {
-  list-style-type: none;
-}
-
 nav h1 a {
   text-decoration: none;
   font-size: var(--large-font);
 }
 
-ul li a {
+nav ul li a {
   text-decoration: none;
 }
 
@@ -61,40 +53,71 @@ nav {
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
-  z-index: 1;
 }
 
 nav a {
   color: var(--primary-color);
 }
 
-nav a:hover {
-  color: var(--secondary-color);
-}
-
 nav ul {
+  list-style-type: none;
   display: flex;
   gap: 2rem;
 }
 
-/* hero section */
+nav a:hover {
+  color: var(--secondary-color);
+}
 
+/* Sections */
 section {
   margin: 90px;
   padding: 90px;
   color: var(--primary-color);
 }
 
-#hero {
+/* hero section */
+
+.hero {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
 /* Profile photo */
 
+/* About me background section */
+.about {
+  margin: 0;
+  background-image: url(./asset/about-me-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 90vh;
+  margin: 0;
+}
+
+.about-me {
+  /* border: 2px solid black; */
+  margin: 200px;
+  padding: 50px;
+}
+
 /*skill cards*/
 
-#cards {
+.skill-cards {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skill-cards ul {
+  list-style-type: none;
+}
+
+.card {
+  margin: 5px;
+  border: 2px solid var(--secondary-shadow);
+  border-radius: solid 10px;
 }
