@@ -1,16 +1,17 @@
 /* CSS Variables */
 
 :root {
-  font-family: Inter, sans-serif; /*inter type face font family*/
-
+  font-family: Inter, InterVariable, sans-serif; /*inter type face font family*/
   font-feature-settings:
     "liga" 1,
-    "calt" 1; /*fix for Chrome */
+    "calt" 1; /*fix for Chrome */ 
 
   --large-font: 50;
+  --normal-font: 20;
+
   --bg-color: #fcfcfc;
   --primary-color: #125a77;
-  --secondary-color: #00928f;
+  --secondary-color: #039c9a;
   --primary-shadow: #88bac6;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -36,13 +37,12 @@ body {
 }
 
 /* nav bar */
-nav h1 a {
-  text-decoration: none;
+.logo {
   font-size: var(--large-font);
 }
 
-nav ul li a {
-  text-decoration: none;
+.logo a:hover {
+  color: var(--secondary-color);
 }
 
 nav {
@@ -52,21 +52,24 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
 }
 
 nav a {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
-nav ul {
-  list-style-type: none;
+.nav-links {
+  list-style: none;
   display: flex;
   gap: 2rem;
+  font-size: var(--normal-font);
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 /* Sections */
@@ -76,13 +79,13 @@ section {
   color: var(--primary-color);
 }
 
-/* hero section */
+/* hero section*/
 
 .hero {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
 }
 
 /* Profile photo */
@@ -114,10 +117,13 @@ section {
 
 .skill-cards ul {
   list-style-type: none;
+  margin: 0;
 }
 
 .card {
-  margin: 5px;
+  /* margin: 5px; */
   border: 2px solid var(--secondary-shadow);
-  border-radius: solid 10px;
+  border-radius: 10px;
+  place-items: center;
+  list-style: none;
 }
