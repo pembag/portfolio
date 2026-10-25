@@ -90,6 +90,22 @@ section {
   gap: 5rem;
 }
 
+.greeting{
+  font-size: var(--normal-font);
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.icon{
+  cursor: pointer;
+  height: 2.5rem;
+}
+
 /* Profile photo */
 
 /* About me background section */
@@ -106,7 +122,9 @@ section {
   /* border: 2px solid black; */
   margin: 135px;
   padding: 40px;
-/* position: sticky;} */
+  width: 900px;
+  min-height: 100vh;
+}
 
 /*skill cards*/
 
@@ -117,13 +135,14 @@ section {
 
 .skill-cards ul {
   list-style-type: none;
-  margin: 0;
+  /* margin: 0; */
+  gap: 5rem;
 }
 
 .card {
   /* margin: 5px; */
   border: 2px solid var(--secondary-shadow);
   border-radius: 10px;
-  place-items: center;
-  list-style: none;
+  /* place-items: center; */
+  /* list-style: none; */
 }
