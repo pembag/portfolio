@@ -52,6 +52,7 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  max-height: 10vh;
 }
 
 nav a {
@@ -99,15 +100,13 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 90vh;
-  margin: 0;
 }
 
 .about-me {
   /* border: 2px solid black; */
-  margin: 200px;
-  padding: 50px;
-}
+  margin: 135px;
+  padding: 40px;
+/* position: sticky;} */
 
 /*skill cards*/
 
